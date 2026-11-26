@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Smart Microgrid AI",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": -150, "left": -40, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot_batt", "top": -150, "left": 120, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot_load", "top": -150, "left": 210, "attrs": {} },
+    { "type": "wokwi-ntc-temperature-sensor", "id": "temp1", "top": -150, "left": 300, "attrs": {} },
+    { "type": "wokwi-led", "id": "led_crit", "top": 220, "left": 80, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led_noncrit", "top": 220, "left": 140, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "led_alarm", "top": 220, "left": 200, "attrs": { "color": "red" } }
+  ],
+  "connections": [
+    [ "ldr1:VCC", "uno:5V", "red", [] ],
+    [ "ldr1:GND", "uno:GND.1", "black", [] ],
+    [ "ldr1:AO", "uno:A0", "green", [] ],
+    [ "pot_batt:VCC", "uno:5V", "red", [] ],
+    [ "pot_batt:GND", "uno:GND.1", "black", [] ],
+    [ "pot_batt:SIG", "uno:A1", "blue", [] ],
+    [ "pot_load:VCC", "uno:5V", "red", [] ],
+    [ "pot_load:GND", "uno:GND.1", "black", [] ],
+    [ "pot_load:SIG", "uno:A2", "orange", [] ],
+    [ "temp1:VCC", "uno:5V", "red", [] ],
+    [ "temp1:GND", "uno:GND.1", "black", [] ],
+    [ "temp1:OUT", "uno:A3", "purple", [] ],
+    [ "led_crit:A", "uno:6", "green", [] ],
+    [ "led_crit:C", "uno:GND.2", "black", [] ],
+    [ "led_noncrit:A", "uno:7", "yellow", [] ],
+    [ "led_noncrit:C", "uno:GND.2", "black", [] ],
+    [ "led_alarm:A", "uno:8", "red", [] ],
+    [ "led_alarm:C", "uno:GND.2", "black", [] ]
+  ]
+}
