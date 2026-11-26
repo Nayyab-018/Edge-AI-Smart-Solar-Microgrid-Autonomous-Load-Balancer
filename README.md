@@ -6,6 +6,7 @@ A hardware-in-the-loop (HIL) cyber-physical system combining embedded microcontr
 * **Hardware Circuit & Firmware (Wokwi):** [Launch Live Simulation](https://wokwi.com/projects/481758745417832449)
 * **AI Models & Constrained Scheduler:** Open `microgrid_ai.ipynb` in this repository
 
+
 ## 📊 System Architecture & Visual Validation
 
 ### 1. Hardware-in-the-Loop Circuit (`sketch.ino`, `diagram.json`)
