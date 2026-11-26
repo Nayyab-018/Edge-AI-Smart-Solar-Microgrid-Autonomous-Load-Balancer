@@ -5,6 +5,7 @@ A hardware-in-the-loop (HIL) cyber-physical system combining embedded microcontr
 ## 🔗 Live Interactive Simulations
 * **Hardware Circuit & Firmware (Wokwi):** [Launch Live Simulation](https://wokwi.com/projects/481758745417832449)
 * **AI Models & Constrained Scheduler:** Open `microgrid_ai.ipynb` in this repository
+
 **Live AI Digital Twin Dashboard (Streamlit):** [Launch Interactive Web App](https://edge-ai-smart-solar-microgrid-autonomous-load-balancer-bewrkr6.streamlit.app/)
 
 
